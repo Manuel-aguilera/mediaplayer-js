@@ -1,0 +1,15 @@
+{
+	"name": "mediaplayer",
+	"version": "1.0.0",
+	"description": "Poyecto del curso profesional de JavaScript de la escuela de Javascript de Platzi",
+	"main": "index.html",
+	"keywords": [
+		"platzi"
+	],
+	"author": "Manuel Aguilera Magaña",
+	"license": "MIT",
+	"scripts": {
+		"start": "live-server"
+	},
+	"devDependencies": {}
+}
