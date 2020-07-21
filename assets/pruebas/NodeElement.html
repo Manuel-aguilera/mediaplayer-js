@@ -1,0 +1,19 @@
+<html>
+	<header>
+		<title>Node Elements</title>
+	</header>
+	<body>
+		<li><button class="call-to-action">Vamos a estudiar juntos 1</button></li>
+		<li><button class="call-to-action">Vamos a estudiar juntos 2</button></li>
+		<li><button class="call-to-action">Vamos a estudiar juntos 3</button></li>
+
+		<script>
+			const buttons = document.getElementsByClassName("call-to-action");
+			Array.prototype.forEach.call(buttons, (button) => {
+				button.onclick = () => {
+					alert("Nunca pares de aprender nene :3");
+				};
+			});
+		</script>
+	</body>
+</html>
