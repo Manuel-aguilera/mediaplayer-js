@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Prototype</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Prototype</h1>
+		</header>
+
+		<main class="container">
+			<a href="/assets/pruebas/">Go to back</a>
+		</main>
+
+		<script>
+			function Hero(name) {
+				this.name = name;
+			}
+
+			Hero.prototype.saludar = function () {
+				console.log(`Soy la verga: ${this.name}`);
+			};
+
+			const batman = new Hero("batman");
+			batman.saludar();
+			const robin = new Hero("robin");
+			robin.saludar();
+		</script>
+	</body>
+</html>
