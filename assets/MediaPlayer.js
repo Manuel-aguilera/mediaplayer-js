@@ -1,7 +1,7 @@
 function MediaPlayer(config) {
 	this.media = config.el;
 	this.plugins = config.plugins || [];
-	this._initPlugins();
+	// this._initPlugins();
 }
 
 MediaPlayer.prototype._initPlugins = function () {
