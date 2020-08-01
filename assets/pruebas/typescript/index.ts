@@ -1,15 +1,18 @@
+debugger;
+
 console.log("Hello, Typescript");
 
-function add(a: number, b: number) {
-	console.log(a);
-	// return a + b;
-}
+// function add(a: number, b: number) {
+// 	return a + b;
+// }
 
-const sum = add(2, 3);
+// const sum = add(2, 3);
+// console.log(sum);
 
 //boolean
 let muted: boolean = true;
 muted = false;
+
 //Números
 let numerador: number = 2;
 let denominador: number = 9;
@@ -44,3 +47,27 @@ comodin = { type: "Wildcard" };
 
 //Object
 let someObject: object = { type: "Wildcard" };
+
+//funciones
+function add(a: number, b: number): number {
+	return a + b;
+}
+
+const sum = add(3, 4);
+console.log(`La suma es ${sum}`);
+
+function createAdder(a: number): (number) => number {
+	return function (b: number) {
+		return a + b;
+	};
+}
+
+const addFour = createAdder(4);
+const fourPlus6 = addFour(6);
+
+function fullName(firstName?: string, lastName: string = "Magaña"): string {
+	return `${firstName} ${lastName}`;
+}
+
+const manuel = fullName("Manuel");
+console.log(manuel);
