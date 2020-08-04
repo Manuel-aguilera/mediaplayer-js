@@ -1,4 +1,4 @@
-debugger;
+// debugger;
 
 console.log("Hello, Typescript");
 
@@ -64,6 +64,7 @@ function createAdder(a: number): (number) => number {
 
 const addFour = createAdder(4);
 const fourPlus6 = addFour(6);
+console.log(addFour);
 
 function fullName(firstName?: string, lastName: string = "Magaña"): string {
 	return `${firstName} ${lastName}`;
@@ -71,3 +72,27 @@ function fullName(firstName?: string, lastName: string = "Magaña"): string {
 
 const manuel = fullName("Manuel");
 console.log(manuel);
+
+interface Rectangulo {
+	ancho: number;
+	alto: number;
+	color?: Color;
+}
+
+let rect: Rectangulo = {
+	ancho: 4,
+	alto: 6,
+	color: Color.Rojo,
+};
+
+function area(r: Rectangulo) {
+	return r.alto * r.ancho;
+}
+
+const areaRect = area(rect);
+console.log(areaRect);
+
+rect.toString = function () {
+	return this.color ? `Un rectángulo ${this.color}` : `Un rectángulo`;
+};
+console.log(rect.toString());

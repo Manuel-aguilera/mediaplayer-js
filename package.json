@@ -11,9 +11,7 @@
 	"scripts": {
 		"start": "parcel index.html assets/pruebas/**/*.html"
 	},
-	"devDependencies": {
-		"typescript": "^3.9.7"
-	},
+	"devDependencies": {},
 	"browserslist": [
 		"last 1 chrome version"
 	],

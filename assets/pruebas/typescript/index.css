@@ -1,0 +1,45 @@
+:root {
+	--tabla-dim: 200px;
+}
+
+.wrapper {
+	display: grid;
+	text-align: center;
+	margin: 100px;
+	grid-template-columns: repeat(3, 150px);
+	grid-gap: 5px;
+	grid-auto-rows: 150px;
+}
+
+.wrapper div {
+	padding-top: 70px;
+	/* background-color: darkgrey; */
+}
+
+.Red {
+	background-color: #c0392b;
+}
+.Red_Light {
+	background-color: #ec7063;
+}
+.Purple_Light {
+	background-color: #bb8fce;
+}
+.Purple {
+	background-color: #8e44ad;
+}
+.Blue {
+	background-color: #2980b9;
+}
+.Green {
+	background-color: #1abc9c;
+}
+.Green_Light {
+	background-color: #abebc6;
+}
+.Yellow {
+	background-color: #f1c40f;
+}
+.Orange {
+	background-color: #e59866;
+}
