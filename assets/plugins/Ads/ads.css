@@ -1,0 +1,51 @@
+.ads {
+	padding: 4px;
+	padding-right: 8px;
+	background: rgb(119, 119, 119);
+	background: linear-gradient(
+		180deg,
+		rgba(119, 119, 119, 0.6) 0%,
+		rgba(88, 88, 88, 0.7) 30%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	background: rgb(119, 119, 119);
+	background: linear-gradient(
+		180deg,
+		rgba(119, 119, 119, 0.6) 0%,
+		rgba(88, 88, 88, 0.7) 30%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	width: 100%;
+
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ads__link {
+	display: flex;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.ads__img {
+	width: 80px;
+	min-width: 80px;
+	height: 80px;
+	margin-right: 16px;
+}
+
+.ads__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ads__title {
+	margin: 0;
+}
+.ads__body {
+	margin: 0;
+	color: white;
+}

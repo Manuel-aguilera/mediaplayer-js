@@ -40,6 +40,7 @@ function EmailFieldDecorator(field: Field): Field {
 		if (value.indexOf("@") === -1) {
 			field.errors.push("Debe ser un email");
 		}
+		console.log(field.errors);
 	};
 	return field;
 }
@@ -47,3 +48,4 @@ function EmailFieldDecorator(field: Field): Field {
 let field = new Field(document.querySelector("#email"));
 field = RequiredFieldDecorator(field);
 field = EmailFieldDecorator(field);
+console.log(field);
